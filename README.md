@@ -1,6 +1,7 @@
 # chuyendephattrienweb1_2024
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Lập trình hướng đối tượng
 =======
 - Exception
@@ -9,3 +10,6 @@
 =======
 - Thiết kế web
 >>>>>>> origin/front
+=======
+- Các lỗi bảo mật
+>>>>>>> origin/security
