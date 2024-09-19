@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Lập trình hướng đối tượng
 =======
 - Exception
@@ -13,3 +14,6 @@
 =======
 - Các lỗi bảo mật
 >>>>>>> origin/security
+=======
+- Type hint
+>>>>>>> origin/type_hint
