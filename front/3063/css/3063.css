@@ -1,0 +1,165 @@
+.type-3063 .container .row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 0;
+  text-align: center;
+}
+.type-3063 .container .row .section-title h1 {
+  font: 36px Raleway;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.type-3063 .container .row .section-title h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: #03A9F4;
+}
+.type-3063 .container .row .col-md-3 {
+  width: 262.5px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 13px;
+  border: 1 solid #ccc;
+  height: 595px;
+  background: #fffefd;
+  border-top: 5px solid #303030;
+  transition: border-top 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+.type-3063 .container .row .col-md-3:hover {
+  border-top: 5px solid #03A9F4;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.type-3063 .container .row .col-md-3:hover .pt-plan {
+  background: #03A9F4;
+  color: #fffefd;
+}
+.type-3063 .container .row .col-md-3:hover .pt-footer .btn-custom {
+  background: #03A9F4;
+}
+.type-3063 .container .row .col-md-3:hover .pt-head .caption {
+  border-bottom: 0.3px solid #03A9F4;
+}
+.type-3063 .container .row .col-md-3 .pt-head {
+  flex-grow: 0;
+  padding-top: 20px;
+}
+.type-3063 .container .row .col-md-3 .pt-head .caption {
+  font-family: Raleway;
+  letter-spacing: 2px;
+  font-size: 14px;
+  white-space: nowrap;
+  border-bottom: 0.3px solid #333333;
+  color: #333333;
+  padding-bottom: 5px;
+  display: inline-block;
+  width: 85px;
+  transition: border-bottom 0.1s ease;
+}
+.type-3063 .container .row .col-md-3 .pt-head .pt-price-tag {
+  font-size: 50px;
+  font-weight: 700;
+  color: #333333;
+  font-family: Raleway;
+}
+.type-3063 .container .row .col-md-3 .pt-head .pt-price-tag span {
+  font-size: 20px;
+  color: #1c1818;
+  font-weight: 400;
+}
+.type-3063 .container .row .col-md-3 .pt-plan {
+  font-size: 25px;
+  font-weight: bold;
+  background: #303030;
+  color: #fffefd;
+  padding: 10px 0;
+  margin: 15px 0 0;
+  box-sizing: border-box;
+  height: 67.97px;
+  transition: background 0.5s ease, color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.type-3063 .container .row .col-md-3 ul {
+  list-style: none;
+  padding: 0;
+}
+.type-3063 .container .row .col-md-3 ul li {
+  font-size: 14px;
+  font-family: Raleway;
+  color: #777777;
+  padding: 15.5px 20px;
+  border-bottom: 0.5px solid #d1cccc;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.type-3063 .container .row .col-md-3 .pt-footer .btn-custom {
+  background-color: #2E3138;
+  color: #fffefd;
+  font-size: 13px;
+  font-weight: 50;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background 0.5s ease;
+  margin-bottom: 1px;
+  justify-content: center;
+  align-items: center;
+}
+.type-3063 .container .row .col-md-3.popular {
+  border-top: 5px solid #03A9F4;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  position: relative;
+}
+.type-3063 .container .row .col-md-3.popular .fa-regular {
+  background: #03A9F4;
+  width: 40px;
+  height: 45px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0px;
+  left: 85%;
+  transform: translate(-50%);
+  font-size: 25px;
+  color: #fffefd;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.type-3063 .container .row .col-md-3.popular .pt-plan {
+  background: #03A9F4;
+  color: #fffefd;
+  position: relative;
+}
+.type-3063 .container .row .col-md-3.popular .caption {
+  border-bottom: 0.3px solid #03A9F4;
+}
+.type-3063 .container .row .col-md-3.popular .btn-custom {
+  background-color: #03A9F4;
+}
+.type-3063 .container .row .col-md-3.popular .btn-custom:hover {
+  background-color: #03A9F4;
+}
+.type-3063 .container .row .col-md-3.popular .popular-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #fffefd;
+}

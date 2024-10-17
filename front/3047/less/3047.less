@@ -1,0 +1,189 @@
+@slider-color: #ff4500; // Màu của thanh trượt
+@slider-height: 5px; // Chiều cao của thanh trượt
+@border-radius: 7px; // Bo tròn
+@font-family: 'Open Sans'; // Font chữ mặc định
+@font-family-bold: 'Raleway', sans-serif; // Font chữ đậm
+@font-color: #333333; // Màu chữ
+@button-background: #f2480c; // Màu nền của nút
+@input-background: #F6F6F6; // Màu nền của input
+@icon-color: #000000; // Màu sắc của biểu tượng
+
+.type-3047 {
+  .container {
+    .row {
+      .col-md-3 {
+        .input-group {
+          margin-top: 20px;
+          position: relative;
+          
+
+          .form-control {
+            background: @input-background; // Sử dụng biến cho màu nền
+            border: 0;
+            padding: 7px 20px !important;
+            height: 40px !important;
+            border-radius: 0 !important;
+            font-size: 12px;
+           
+            background: #F6F6F6;
+          }
+
+          .input-group-append {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+
+            i {
+              color: @icon-color; // Sử dụng biến cho màu biểu tượng
+              font-size: 13px;
+            }
+          }
+        }
+
+        .custom-font-size,
+        .filter,
+        .top {
+          padding-top: 15px;
+          font-size: 20px;
+          font-family: @font-family-bold;
+          font-weight: bold;
+          color: #23272c;
+          margin-bottom: 20px;
+          border-bottom: 0.5px solid #e6e3e3;
+          padding-bottom: 15px;
+        }
+
+        ul {
+          padding-left: 0;
+          list-style: none;
+
+          li {
+            margin-bottom: 10px;
+            position: relative;
+          }
+
+          a {
+            color: @font-color;
+            text-decoration: none;
+            font-size: 13px;
+
+            i {
+              margin-right: 7px;
+            }
+
+            &:hover {
+              color: @slider-color; // Màu khi hover
+            }
+          }
+        }
+
+        .mb-4 {
+          margin-bottom: 1.5rem;
+
+          .filter {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+          }
+
+          .custom-range {
+            width: 90%;
+            height: @slider-height; // Chiều cao thanh trượt
+            background: @slider-color; // Màu nền thanh trượt
+            border-radius: @border-radius; // Bo tròn
+            appearance: unset;
+            position: relative;
+
+            &::before {
+              content: '';
+              position: absolute;
+              width: 13px;
+              height: 13px;
+              background: @slider-color; // Màu nút kéo
+              border-radius: 50%;
+              left: 0;
+              top: -4px;
+              z-index: 1;
+            }
+
+            &::-webkit-slider-thumb {
+              width: 13px;
+              height: 13px;
+              background: @slider-color; // Màu nút kéo
+              border-radius: 50%;
+              cursor: pointer;
+              appearance: none;
+              position: relative;
+              z-index: 2;
+            }
+          }
+
+          button {
+            background: @button-background; // Màu nền của nút
+            color: #eae3e3; // Màu chữ trên nút
+            border: none;
+            border-radius: 4px;
+            width: 100px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            padding-bottom: 30px;
+          }
+
+          .btn-filter {
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1rem;
+          }
+
+          p {
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 14px;
+            font-family: @font-family;
+            color: @font-color;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .media {
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            margin-right: 15px;
+          }
+
+          .media-body {
+            display: flex;
+            flex-direction: column;
+
+            .pell {
+              font-size: 14px;
+              color: #a19090;
+            }
+
+            span {
+              font-size: 15px;
+            }
+
+            p {
+              font-size: 13px;
+              color: hsl(210deg 6.56% 52.16%);
+              font-family: @font-family;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

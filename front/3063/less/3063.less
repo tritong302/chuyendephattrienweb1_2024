@@ -1,0 +1,213 @@
+// Đặt biến cho các giá trị giống nhau
+@font-family: Raleway;
+@primary-color: #03A9F4;
+@secondary-color: #2E3138;
+@border-color: #333333;
+@background-color: #F8F8F8;
+@white: #fffefd;
+@dark-color: #303030;
+@light-grey: #F8F8F8;
+@grey: #777777;
+@shadow-opacity: 0.5;
+@font-size: 14px;
+
+.type-3063 {
+  .container {
+    .row {
+      display: flex;
+      justify-content: center; // Căn giữa các ô
+      gap: 10px; // Thêm gap nhỏ giữa các ô (nếu trình duyệt hỗ trợ)
+      padding: 40px 0;
+      text-align: center;
+      .section-title {
+        h1 {
+          font: 36px @font-family;
+          font-weight: bold;
+          color: @border-color;
+          margin-bottom: 20px;
+          position: relative;
+          display: inline-block;
+          padding-bottom: 10px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background: @primary-color;
+          }
+        }
+      }
+
+      .col-md-3 {
+        width: 262.5px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 13px;
+        border: 1 solid #ccc;
+        height: 595px;
+        background: @white;
+        border-top: 5px solid @dark-color;
+        transition: border-top 0.5s ease, box-shadow 0.5s ease;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          border-top: 5px solid @primary-color;
+          box-shadow: 0 0 20px rgba(0, 0, 0, @shadow-opacity);
+
+          .pt-plan {
+            background: @primary-color;
+            color: @white;
+          }
+
+          .pt-footer {
+            .btn-custom {
+              background: @primary-color;
+            }
+          }
+
+          .pt-head {
+            .caption {
+              border-bottom: 0.3px solid @primary-color;
+            }
+          }
+        }
+
+        .pt-head {
+          flex-grow: 0;
+          padding-top: 20px;
+
+          .caption {
+            font-family: @font-family;
+            letter-spacing: 2px;
+            font-size: @font-size;
+            white-space: nowrap;
+            border-bottom: 0.3px solid @border-color;
+            color: @border-color;
+            padding-bottom: 5px; // Tạo khoảng cách giữa chữ và đường gạch chân
+            display: inline-block;
+            width: 85px; // Chiều rộng của thanh gạch chân
+            transition: border-bottom 0.1s ease; // Chuyển đổi cho đường viền dưới
+          }
+
+          .pt-price-tag {
+            font-size: 50px;
+            font-weight: 700;
+            color: @border-color;
+            font-family: @font-family;
+
+            span {
+              font-size: 20px;
+              color: #1c1818;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .pt-plan {
+          font-size: 25px;
+          font-weight: bold;
+          background: @dark-color;
+          color: @white;
+          padding: 10px 0; // Để padding đều hai bên
+          margin: 15px 0 0;
+          box-sizing: border-box;
+          height: 67.97px;
+          transition: background 0.5s ease, color 0.5s ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            font-size: @font-size;
+            font-family: @font-family;
+            color: @grey;
+            padding: 15.5px 20px;
+            border-bottom: 0.5px solid #d1cccc;
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }
+        }
+
+        .pt-footer {
+          .btn-custom {
+            background-color: @secondary-color;
+            color: @white;
+            font-size: 13px;
+            font-weight: 50;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background 0.5s ease;
+            margin-bottom: 1px;
+
+          justify-content: center;
+          align-items: center;
+          }
+        }
+
+        &.popular {
+          border-top: 5px solid @primary-color;
+          box-shadow: 0 0 20px rgba(0, 0, 0, @shadow-opacity);
+          position: relative; 
+
+          .fa-regular {
+            background: #03A9F4;
+            width: 40px;
+            height: 45px;
+            margin: 0 auto;
+            position: absolute; // Định vị biểu tượng
+            top: 0px; // Đặt vị trí của biểu tượng dưới border-top
+            left: 85%; // Căn giữa
+            transform: translate(-50%); // Để căn giữa chính xác
+            font-size: 25px; // Kích thước của biểu tượng
+            color: @white; // Màu sắc của biểu tượng
+            z-index: 1; // Đảm bảo biểu tượng nằm trên cùng
+            display: flex;
+          justify-content: center;
+          align-items: center;
+
+          }
+
+          .pt-plan {
+            background: @primary-color;
+            color: @white;
+            position: relative; // Để căn giữa biểu tượng đúng cách
+          }
+
+          .caption {
+            border-bottom: 0.3px solid @primary-color;
+          }
+
+          .btn-custom {
+            background-color: @primary-color;
+
+            &:hover {
+              background-color: @primary-color;
+            }
+          }
+
+          .popular-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: @white;
+          }
+        }
+      }
+    }
+  }
+}
